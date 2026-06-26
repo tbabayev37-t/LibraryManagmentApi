@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using LibraryManagment.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace LibraryManagment.Models.Context;
+namespace LibraryManagment.Context;
 
 public partial class LibraryManagementContext : DbContext
 {

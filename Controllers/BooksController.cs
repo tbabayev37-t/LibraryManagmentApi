@@ -1,5 +1,6 @@
-﻿using LibraryManagment.DTOs;
-using LibraryManagment.Models.Context;
+﻿using AutoMapper;
+using LibraryManagment.Context;
+using LibraryManagment.DTOs;
 using LibraryManagment.Models.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,24 +13,29 @@ namespace LibraryManagment.Controllers
     public class BooksController : ControllerBase
     {
         private readonly LibraryManagementContext _context;
-        public BooksController(LibraryManagementContext context)
+        private readonly IMapper _mapper;
+        public BooksController(LibraryManagementContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllBooks()
         {
-            var booksDto = await _context.Books.Include(x => x.Author).Select(book => new BookResultDto
-            {
-                Id = book.Id,
-                BookName = book.BookName,
-                BookRating = book.BookRating,
-                AuthorFullName = book.Author != null ? $"{book.Author.Name} {book.Author.Surname}" : "Muellif yoxdur"
-            }).ToListAsync();
+            /* var booksDto = await _context.Books.Include(x => x.Author).Select(book => new BookResultDto
+             {
+                 Id = book.Id,
+                 BookName = book.BookName,
+                 BookRating = book.BookRating,
+                 AuthorFullName = book.Author != null ? $"{book.Author.Name} {book.Author.Surname}" : "Muellif yoxdur"
+             }).ToListAsync();*/
+            var books = await _context.Books.Include(x => x.Author).ToListAsync();
+            var result = _mapper.Map<List<BookResultDto>>(books);
+            return Ok(result);
 
-            return Ok(booksDto);
         }
+    
         [HttpPost]
         public async Task<IActionResult> CreateBook(Book book)
         {

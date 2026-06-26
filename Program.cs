@@ -1,12 +1,14 @@
-using LibraryManagment.Models.Context;
+using LibraryManagment.Context;
+using LibraryManagment.Profiles;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<LibraryManagementContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddAutoMapper(cfg=>cfg.AddProfile<MappingProfile>());
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); 
