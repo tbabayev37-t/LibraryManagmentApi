@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|c:\\users\\lenovo\\source\\repos\\librarymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|c:\\users\\lenovo\\source\\repos\\librarymanagment\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|solutionrelative:controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|c:\\users\\lenovo\\source\\repos\\librarymanagment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|c:\\users\\lenovo\\source\\repos\\librarymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63018DEB-C9FF-A199-B7D3-1AA258569588}|LibraryManagment.csproj|c:\\users\\lenovo\\source\\repos\\librarymanagment\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
@@ -66,18 +66,17 @@
               "RelativeToolTip": "DTOs\\AuthorDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T11:55:04.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T11:55:04.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthorsController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\Controllers\\AuthorsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthorsController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\Controllers\\AuthorsController.cs",
               "RelativeToolTip": "Controllers\\AuthorsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAArwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAArwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T11:48:55.848Z",
               "EditorCaption": ""
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Controllers\\BooksController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAwDUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T18:08:39.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T18:08:39.834Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "Profiles\\MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T11:06:52.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T11:06:52.347Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "DTOs\\BookResultDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T09:38:40.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T09:38:40.871Z"
             },
             {
               "$type": "Document",
@@ -131,12 +127,11 @@
               "RelativeToolTip": "Models\\Entities\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T19:34:57.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T19:34:57.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-25T18:43:58.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T18:43:58.396Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "LibraryManagment.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-06-25T18:40:43.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T18:40:43.833Z"
             },
             {
               "$type": "Document",
@@ -170,18 +163,17 @@
               "RelativeToolTip": "Context\\LibraryManagementContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T18:03:04.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T18:03:04.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\LibraryManagment\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T17:48:26.646Z",
               "EditorCaption": ""
@@ -196,8 +188,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-25T17:44:28.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T17:44:28.638Z"
             }
           ]
         }
