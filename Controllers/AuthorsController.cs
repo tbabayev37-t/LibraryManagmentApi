@@ -2,6 +2,7 @@
 using LibraryManagment.Context;
 using LibraryManagment.DTOs;
 using LibraryManagment.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +49,7 @@ namespace LibraryManagment.Controllers
             return Ok(author);
         }
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateAuthor(Author author)
         {
             await _context.Authors.AddAsync(author);
@@ -76,7 +78,7 @@ namespace LibraryManagment.Controllers
             {
                 return NotFound("Muellif tapilmadi");
             }
-            _context.Remove(deletedAuthor);
+            _context.Authors.Remove(deletedAuthor);
             await _context.SaveChangesAsync();
             return Ok("Muellif ugurla silindi");
         }

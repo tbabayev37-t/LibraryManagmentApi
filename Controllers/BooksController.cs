@@ -2,6 +2,7 @@
 using LibraryManagment.Context;
 using LibraryManagment.DTOs;
 using LibraryManagment.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,7 @@ namespace LibraryManagment.Controllers
         }
     
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateBook(Book book)
         {
             await _context.Books.AddAsync(book);

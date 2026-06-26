@@ -1,8 +1,9 @@
-@LibraryManagment_HostAddress = http://localhost:5144
+@LibraryManagment_HostAddress = https://localhost:7237
 
-GET {{LibraryManagment_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{LibraryManagment_HostAddress}}/api/Auth/login
+Content-Type: application/json
 
-###
-GET {{LibraryManagment_HostAddress}}/api/Books
-Accept: application/json
+{
+  "username": "your_test_user",
+  "password": "your_password"
+}
