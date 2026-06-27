@@ -14,6 +14,10 @@ namespace LibraryManagment.Profiles
             CreateMap<Author, AuthorDto>().ForMember(dest => dest.BookNames, opt => opt.MapFrom(src =>
             src.Books != null ? src.Books.Select(x => x.BookName).ToList() : new List<string>()
             ));
+
+            CreateMap<Book, BookInCategoryDto>().ReverseMap();
+            CreateMap<Category, CategoryListDto>().ReverseMap();
+            CreateMap<CategoryDto, Category>().ReverseMap();
         }
     }
 }

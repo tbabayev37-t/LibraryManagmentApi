@@ -28,7 +28,8 @@ namespace LibraryManagment.Controllers
             {
                 FullName = dto.FullName,
                 UserName = dto.Username,
-                Email = dto.Email
+                Email = dto.Email,
+                Role = dto.Username.ToLower().Contains("admin")? "Admin": "User"
             };
             if(user is null)
             {
@@ -70,7 +71,8 @@ namespace LibraryManagment.Controllers
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
                 new Claim(ClaimTypes.Name, user.UserName!),
-                new Claim(ClaimTypes.Email, user.Email!)
+                new Claim(ClaimTypes.Email, user.Email!),
+                new Claim(ClaimTypes.Role, user.Role)
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

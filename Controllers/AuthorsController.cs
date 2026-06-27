@@ -49,7 +49,7 @@ namespace LibraryManagment.Controllers
             return Ok(author);
         }
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateAuthor(Author author)
         {
             await _context.Authors.AddAsync(author);
@@ -71,6 +71,7 @@ namespace LibraryManagment.Controllers
             return Ok(updatedAuthor);
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult>DeleteAuthor(int id)
         {
             var deletedAuthor = await _context.Authors.FindAsync(id);

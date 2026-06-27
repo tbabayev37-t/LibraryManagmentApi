@@ -19,6 +19,7 @@ public partial class LibraryManagementContext : IdentityDbContext<User>
 
     public virtual DbSet<Author> Authors { get; set; }
     public virtual DbSet<Book> Books { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -30,7 +31,6 @@ public partial class LibraryManagementContext : IdentityDbContext<User>
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // ⚠️ Bu sətir mütləq birinci gəlməlidir, Identity cədvəllərini qurur!
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Author>(entity =>
@@ -50,6 +50,9 @@ public partial class LibraryManagementContext : IdentityDbContext<User>
             entity.HasOne(d => d.Author).WithMany(p => p.Books)
                 .HasForeignKey(d => d.AuthorId)
                 .HasConstraintName("FK__Books__AuthorID__4F7CD00D");
+            entity.HasOne(d => d.Category).WithMany(p => p.Books)
+        .HasForeignKey(d => d.CategoryId)
+        .OnDelete(DeleteBehavior.Restrict);
         });
 
         OnModelCreatingPartial(modelBuilder);
